@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd ~/Downloads
+wget -c http://ankisrs.net/download/mirror/anki-2.0.33.deb
+sudo dpkg -i anki-2.0.33.deb
+sudo apt-get install -f

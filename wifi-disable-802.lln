@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Sets the option to disable 802.11n on the intel wireless card driver
+sudo cp /etc/modprobe.d/iwlwifi.conf /etc/modprobe.d/iwlwifi.conf.old
+sudo chmod o+w /etc/modprobe.d/iwlwifi.conf
+sudo echo "options iwlwifi 11n_disable=1" >> /etc/modprobe.d/iwlwifi.conf
+sudo chmod o-w /etc/modprobe.d/iwlwifi.conf

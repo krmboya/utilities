@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+sudo apt-get install vlc git nfs-kernel-server python-pip traceroute cheese \
+default-jre maven openjdk-7-jdk libedit-dev nethogs redshift redshift-gtk   \
+cryptsetup xclip libimage-exiftool-perl graphviz whois inkscape help2man    \
+debian-goodies valgrind lynx hplip pgadmin3 clamav-daemon rkhunter tiger    \
+gimp macchanger gnuplot libpcre3-dev dstat ngrep wireshark needrestart lxc \
+python-dev python3-dev cutmp3 audacity libc6-dev-i386 linux-tools-common \
+linux-tools-generic linux-tools-4.4.0-45-generic linux-cloud-tools-4.4.0-45-generic \
+linux-tools-generic-lts-trusty linux-cloud-tools-generic libsdl1.2-dev \
+lib32gcc1 libc6-i386 libxml2:i386 libxml2:i386 libglib2.0-0:i386 \
+libglib2.0-0:i386 libglu1-mesa:i386 libgtk2.0-0:i386 libpangoxft-1.0-0:i386 \
+steam -y
+
+sudo apt-get autoremove -y

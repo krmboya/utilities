@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo pip install virtualenv flake8
+
+# ansible deps
+sudo pip install pyyaml jinja2 nose passlib pycrypto

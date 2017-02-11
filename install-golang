@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# download to into Downloads directory
+cd ~/Downloads
+wget -c https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
+
+# install go in /usr/local
+sudo tar -zxvf go1.7.3.linux-amd64.tar.gz -C /usr/local
+
+# create workspace
+mkdir -p ~/golang-coding
+
+# add relevant go paths in local config
+echo "" >> ~/.bashrc
+echo '# local go workspace' >> ~/.bashrc
+echo 'export GOPATH=$HOME/golang-coding' >> ~/.bashrc
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc

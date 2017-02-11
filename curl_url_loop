@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# curl_url_loop <url> <wait_seconds>
+
+# Repeatedly send a curl request to url, pausing for <seconds> after
+# each iteration
+
+if [ $# -ne 2 ]; then
+    echo "Usage: curl_url_loop <url> <wait_seconds>"
+    exit 1
+fi
+
+while /bin/true; do
+    curl $1
+    sleep $2
+done

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 8
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 1

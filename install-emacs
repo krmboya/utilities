@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+sudo apt-get build-dep emacs24 -y
+cd ~
+git clone git://git.savannah.gnu.org/emacs.git
+cd emacs
+make
+sudo make install
+

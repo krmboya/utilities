@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Backs up home directory to extenal hard-drive
+
+rsync -avz --exclude="entertainment/*" --exclude=".cache/*" \
+--exclude="Downloads/*" --delete --progress /home/krm/ /media/krm/backup/krm 

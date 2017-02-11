@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt-add-repository ppa:stvs/tomate
+sudo apt-get update
+sudo apt-get install tomate
+sudo apt-add-repository --remove ppa:stvs/tomate
